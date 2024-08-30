@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px; /* Increased padding for more space */
+    box-sizing: border-box;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 60px; /* Increased logo height */
+    width: auto;  /* Maintain aspect ratio */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 15px 25px; /* Increased padding for larger clickable area */
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #575757;
+}
+
+/* Content Styles */
+.home-container {
+    width: 90%; /* Increased width for better utilization of space */
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    margin: 0 auto;
+}
+
+.content {
+    padding: 30px; /* Increased padding for more space */
+    background: #fff;
+    border-radius: 12px; /* Slightly larger border-radius */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Larger shadow for more depth */
+    margin: 30px 0; /* Increased margin for better spacing */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.course-box, .payment-box {
+    background: #fff;
+    border-radius: 12px; /* Slightly larger border-radius */
+    padding: 25px; /* Increased padding */
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Larger shadow for more depth */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.course-box {
+    max-width: 600px; /* Increased maximum width */
+    margin: auto;
+}
+
+/* QR Code Image Styles */
+.payment-box img {
+    max-width: 200px; /* Increased maximum width for QR code image */
+    height: auto;     /* Maintain aspect ratio */
+    display: block;   /* Ensure it's a block element */
+    margin: 20px auto; /* Center the image horizontally and add spacing above and below */
+}
+
+/* Close Button Styles */
+.close-btn {
+    position: absolute;
+    top: 15px; /* Adjusted positioning */
+    right: 15px; /* Adjusted positioning */
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 35px; /* Increased width */
+    height: 35px; /* Increased height */
+    text-align: center;
+    line-height: 35px; /* Adjusted line-height */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+    background: #ff1a1a;
+}
+
+/* Login & Register Container Styles */
+.login-container, .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box;
+}
+
+.login-box, .register-box {
+    background: #fff;
+    border-radius: 12px; /* Larger border-radius */
+    padding: 40px; /* Increased padding */
+    width: 400px; /* Increased width */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Larger shadow for more depth */
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.login-box h1, .register-box h1 {
+    margin: 0 0 20px;
+    color: #333;
+}
+
+input {
+    width: calc(100% - 24px); /* Adjusted width for padding */
+    padding: 14px; /* Increased padding */
+    margin: 12px 0; /* Increased margin */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 18px; /* Larger font size */
+}
+
+button {
+    padding: 14px; /* Increased padding */
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Larger font size */
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #575757;
+}
+
+/* Links in Login & Register Containers */
+.register-container p, .login-container p {
+    margin: 20px 0 0;
+}
+
+.register-container a, .login-container a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.register-container a:hover, .login-container a:hover {
+    color: #0056b3;
+}
+
+/* WhatsApp Link Styles */
+.whatsapp-link {
+    color: #25D366;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+}
+
+.whatsapp-link:hover {
+    text-decoration: underline;
+}
